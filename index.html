@@ -53,19 +53,25 @@ p{max-width:66ch;font-family:"Noto Sans",Georgia,sans-serif}
 .lede{font-size:20px}
 section{padding:76px 0}
 .rule{height:1px;background:var(--hair);border:0}
-nav{position:sticky;top:0;z-index:50;background:rgba(245,244,239,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--hair)}
+nav{position:sticky;top:0;z-index:50;background:rgba(245,244,239,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--hair);padding-top:env(safe-area-inset-top,0px)}
+.wrap{padding-left:max(26px,env(safe-area-inset-left,0px));padding-right:max(26px,env(safe-area-inset-right,0px))}
 #secretariat-form,#media-form,#feedback-form{scroll-margin-top:100px}
 nav .wrap{display:flex;align-items:center;flex-wrap:wrap;gap:14px 22px;padding:14px 26px}
-nav a{font-family:"Noto Sans",sans-serif;font-size:13px;letter-spacing:.04em;color:var(--slate);text-decoration:none;opacity:.75}
+nav a{font-family:"Noto Sans",sans-serif;font-size:13px;letter-spacing:.04em;color:var(--slate);text-decoration:none;opacity:.75;padding:11px 4px;display:inline-block}
 nav a:hover,nav a:focus-visible{opacity:1;color:var(--clay)}
-nav a.active{opacity:1;color:var(--clay);border-bottom:2px solid var(--clay);padding-bottom:2px}
+nav a.active{opacity:1;color:var(--clay);border-bottom:2px solid var(--clay)}
 nav .brand{font-family:"Noto Serif",serif;color:var(--clay);font-size:16px;margin-right:8px;flex-shrink:0}
 /* nav dropdown groups */
 nav .nav-group{position:relative;flex-shrink:0}
-nav .nav-group .trigger{font-family:"Noto Sans",sans-serif;font-size:13px;letter-spacing:.04em;color:var(--slate);opacity:.75;background:none;border:none;cursor:pointer;padding:0}
+nav .nav-group .trigger{font-family:"Noto Sans",sans-serif;font-size:13px;letter-spacing:.04em;color:var(--slate);opacity:.75;background:none;border:none;cursor:pointer;padding:11px 4px}
 nav .nav-group .trigger:hover,nav .nav-group .trigger:focus-visible{opacity:1;color:var(--clay)}
-nav .nav-group.active .trigger{opacity:1;color:var(--clay);border-bottom:2px solid var(--clay);padding-bottom:2px}
+nav .nav-group.active .trigger{opacity:1;color:var(--clay);border-bottom:2px solid var(--clay)}
 nav .nav-dropdown{position:absolute;top:100%;left:0;padding-top:12px;background:transparent;display:none;z-index:60;white-space:normal}
+@media(max-width:760px){
+  nav .nav-group.open{flex-basis:100%}
+  nav .nav-dropdown{position:static;width:100%;padding-top:8px;padding-left:0}
+  nav .nav-dropdown-inner{width:100%;box-sizing:border-box}
+}
 nav .nav-dropdown-inner{background:var(--paper);border:1px solid var(--hair);border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.1);min-width:220px;padding:8px}
 nav .nav-group.open .nav-dropdown{display:block}
 @media(hover:hover){nav .nav-group:hover .nav-dropdown{display:block}}
@@ -87,7 +93,7 @@ nav .nav-dropdown a:hover{background:var(--warm);color:var(--clay)}
 .hero h1{font-weight:300;font-size:clamp(32px,5.4vw,58px);line-height:1.1;color:#2E3A38;max-width:17ch;margin:0 auto;font-family:"Noto Serif",serif}
 .hero h1 em{font-style:italic;color:var(--clay)}
 .hero .sub{margin:22px auto 0;max-width:54ch;font-size:19px;color:var(--muted);font-family:"Noto Sans",sans-serif}
-.status-chip{display:inline-flex;align-items:center;gap:8px;margin-top:28px;font-family:"Noto Sans",ui-monospace,monospace;font-size:12px;letter-spacing:.08em;background:var(--paper);border:1px solid var(--hair);color:var(--slate);padding:9px 16px;border-radius:999px}
+.status-chip{display:inline-flex;align-items:center;flex-wrap:wrap;gap:4px 8px;margin-top:28px;font-family:"Noto Sans",ui-monospace,monospace;font-size:12px;letter-spacing:.08em;background:var(--paper);border:1px solid var(--hair);color:var(--slate);padding:9px 16px;border-radius:16px}
 .status-chip .dot{width:7px;height:7px;border-radius:50%;background:var(--ochre)}
 
 .tenses{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:36px}
@@ -121,7 +127,7 @@ nav .nav-dropdown a:hover{background:var(--warm);color:var(--clay)}
 @media(max-width:640px){.u-form .row{grid-template-columns:1fr}}
 .u-form label{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
 .u-form label .opt{text-transform:none;letter-spacing:0;font-style:italic;opacity:.75}
-.u-form input,.u-form select,.u-form textarea{width:100%;border:1px solid var(--hair);border-radius:8px;background:var(--paper);color:var(--slate);font-family:"Noto Sans",sans-serif;font-size:15px;padding:11px 13px;box-sizing:border-box}
+.u-form input,.u-form select,.u-form textarea{width:100%;border:1px solid var(--hair);border-radius:8px;background:var(--paper);color:var(--slate);font-family:"Noto Sans",sans-serif;font-size:16px;padding:11px 13px;box-sizing:border-box}
 .u-form input:focus,.u-form select:focus,.u-form textarea:focus{outline:2px solid var(--jade-text);outline-offset:1px}
 .u-form textarea{min-height:110px;resize:vertical}
 .u-form .field{margin-bottom:16px}
@@ -134,16 +140,16 @@ nav .nav-dropdown a:hover{background:var(--warm);color:var(--clay)}
 .u-form .status.ok{color:var(--jade-text);display:block}
 .u-form .status.err{color:#B4472A;display:block}
 /* footer newsletter subscribe */
-footer .footer-subscribe{margin:0 0 26px;padding-bottom:22px;border-bottom:1px solid rgba(233,237,233,.18)}
-footer .footer-subscribe label{display:block;font-family:"Noto Sans",sans-serif;font-size:13px;color:#C9D2CE;margin-bottom:10px}
-footer .footer-subscribe .row{display:flex;gap:10px;max-width:420px;flex-wrap:wrap}
-footer .footer-subscribe input{flex:1 1 220px;border:1px solid rgba(233,237,233,.3);border-radius:8px;background:rgba(255,255,255,.06);color:#E9EDE9;font-family:"Noto Sans",sans-serif;font-size:14px;padding:10px 12px;box-sizing:border-box}
-footer .footer-subscribe input::placeholder{color:rgba(233,237,233,.5)}
-footer .footer-subscribe button{background:var(--ochre-on-dark);color:#2E2114;border:none;border-radius:8px;padding:10px 18px;font-family:"Noto Sans",sans-serif;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap}
+footer .footer-subscribe{margin:0 0 26px;padding-bottom:22px;border-bottom:1px solid var(--hair)}
+footer .footer-subscribe label{display:block;font-family:"Noto Sans",sans-serif;font-size:13px;color:var(--muted);margin-bottom:10px}
+footer .footer-subscribe .row{display:flex;gap:10px;max-width:420px;margin:0 auto;flex-wrap:wrap}
+footer .footer-subscribe input{flex:1 1 220px;border:1px solid var(--hair);border-radius:8px;background:var(--paper);color:var(--slate);font-family:"Noto Sans",sans-serif;font-size:16px;padding:10px 12px;box-sizing:border-box}
+footer .footer-subscribe input::placeholder{color:var(--muted)}
+footer .footer-subscribe button{background:var(--clay);color:#FFFEFB;border:none;border-radius:8px;padding:10px 18px;font-family:"Noto Sans",sans-serif;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap}
 footer .footer-subscribe button:hover{opacity:.9}
 footer .footer-subscribe .status{margin-top:10px;font-size:13.5px}
-footer .footer-subscribe .status.ok{color:var(--ochre-on-dark);display:block}
-footer .footer-subscribe .status.err{color:#E39B7F;display:block}
+footer .footer-subscribe .status.ok{color:var(--jade-text);display:block}
+footer .footer-subscribe .status.err{color:#B4472A;display:block}
 /* contact page nav cards */
 .contact-nav{display:flex;gap:12px;overflow-x:auto;margin:26px 0 40px;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
 .contact-nav a{flex:0 0 auto;width:42%;min-width:130px;max-width:190px;padding:16px 16px;border:1px solid var(--hair);border-radius:12px;background:var(--paper);text-decoration:none;scroll-snap-align:start;transition:background .15s,border-color .15s}
@@ -284,7 +290,7 @@ footer a{color:var(--jade-text)}
   <p class="quote">"UNIPC is entirely independent and not controlled or directed by any state, government, the United&nbsp;Nations&nbsp;Organization (whose membership consists solely of Member States), other international organizations, or any other entity — not now and never shall be."</p>
 </div>
 
-<section style="padding-top:0"><div class="wrap"><p class="reveal" style="text-align:center;margin:0 auto"><a href="status.html" style="color:var(--jade-text)">Read our full current status →</a></p></div></section>
+<section style="padding-top:0;padding-bottom:0"><div class="wrap"><p class="reveal" style="text-align:center;margin:0 auto"><a href="status.html" style="color:var(--jade-text)">Read our full current status →</a></p></div></section>
 
 <section><div class="wrap"><div class="doors">
 <a class="door reveal" href="nations.html"><span class="num">01</span><h4>Nations and Peoples</h4><p>This table was built for our relatives — Nations like yours.</p></a>
