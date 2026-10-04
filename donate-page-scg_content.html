@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Donate — UNIPC</title>
+<meta name="description" content="UNIPC holds no funds directly. Independently registered, mission-aligned non-profits support UNIPC's preparatory work — here's how that works.">
+<link rel="canonical" href="https://unipc.info/donate.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UNIPC — United Nations Indigenous Peoples Council">
+<meta property="og:title" content="How to Donate — UNIPC">
+<meta property="og:description" content="UNIPC holds no funds directly. Independently registered, mission-aligned non-profits support UNIPC's preparatory work — here's how that works.">
+<meta property="og:url" content="https://unipc.info/donate.html">
+<meta property="og:image" content="https://unipc.info/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Donate — UNIPC">
+<meta name="twitter:description" content="UNIPC holds no funds directly. Independently registered, mission-aligned non-profits support UNIPC's preparatory work — here's how that works.">
+<meta name="twitter:image" content="https://unipc.info/assets/og-image.png">
+<style>
+:root{
+  --clay:#8A4B23; --ochre:#C87F3A; --sky:#7FA8C9; --jade:#4E8577; --slate:#43514F; --cloud:#F5F4EF;
+  --hair:#D6D2C6; --muted:#6B6157; --paper:#FFFEFB;
+  --jade-text:#3E6A5F; --ochre-on-dark:#E3BF9C; --allies-text:#26302F;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section, header#home{scroll-margin-top:64px}
+body{background:var(--cloud);color:var(--slate);font-family:"Noto Serif",Georgia,serif;font-size:18px;line-height:1.65}
+::selection{background:var(--ochre);color:var(--paper)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 26px}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--jade-text);font-family:"Noto Sans",ui-monospace,Menlo,monospace;font-weight:600}
+h1,h2,h3{font-family:"Noto Serif",Georgia,serif;font-weight:400}
+h2{font-size:clamp(26px,3.6vw,38px);line-height:1.16;margin:12px 0 20px;color:var(--clay)}
+p{max-width:66ch;font-family:"Noto Sans",Georgia,sans-serif}
+.lede{font-size:20px}
+section{padding:76px 0}
+.rule{height:1px;background:var(--hair);border:0}
+nav{position:sticky;top:0;z-index:50;background:rgba(245,244,239,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--hair);padding-top:env(safe-area-inset-top,0px)}
+.wrap{padding-left:max(26px,env(safe-area-inset-left,0px));padding-right:max(26px,env(safe-area-inset-right,0px))}
+#secretariat-form,#media-form,#feedback-form{scroll-margin-top:100px}
+nav .wrap{display:flex;align-items:center;flex-wrap:wrap;gap:14px 22px;padding:14px 26px}
+nav a{font-family:"Noto Sans",sans-serif;font-size:13px;letter-spacing:.04em;color:var(--slate);text-decoration:none;opacity:.75;padding:11px 4px;display:inline-block}
+nav a:hover,nav a:focus-visible{opacity:1;color:var(--clay)}
+nav a.active{opacity:1;color:var(--clay);border-bottom:2px solid var(--clay)}
+nav .brand{font-family:"Noto Serif",serif;color:var(--clay);font-size:16px;margin-right:8px;flex-shrink:0}
+/* nav dropdown groups */
+nav .nav-group{position:relative;flex-shrink:0}
+nav .nav-group .trigger{font-family:"Noto Sans",sans-serif;font-size:13px;letter-spacing:.04em;color:var(--slate);opacity:.75;background:none;border:none;cursor:pointer;padding:11px 4px}
+nav .nav-group .trigger:hover,nav .nav-group .trigger:focus-visible{opacity:1;color:var(--clay)}
+nav .nav-group.active .trigger{opacity:1;color:var(--clay);border-bottom:2px solid var(--clay)}
+nav .nav-dropdown{position:absolute;top:100%;left:0;padding-top:12px;background:transparent;display:none;z-index:60;white-space:normal}
+@media(max-width:760px){
+  nav .nav-group.open{flex-basis:100%}
+  nav .nav-dropdown{position:static;width:100%;padding-top:8px;padding-left:0}
+  nav .nav-dropdown-inner{width:100%;box-sizing:border-box}
+}
+nav .nav-dropdown-inner{background:var(--paper);border:1px solid var(--hair);border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.1);min-width:220px;padding:8px}
+nav .nav-group.open .nav-dropdown{display:block}
+@media(hover:hover){nav .nav-group:hover .nav-dropdown{display:block}}
+nav .nav-dropdown a{display:block;padding:9px 12px;border-radius:6px;font-size:13.5px;opacity:1;color:var(--slate)}
+nav .nav-dropdown a:hover{background:var(--warm);color:var(--clay)}
+
+/* hero */
+.hero{min-height:82svh;display:grid;place-items:center;text-align:center;padding:60px 26px 50px}
+.hero .org{font-family:"Noto Sans",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);margin-bottom:26px}
+.seal{width:min(220px,52vw);height:auto;margin:0 auto 32px;display:block}
+.hero-grid{display:grid;grid-template-columns:1fr 200px;gap:44px;align-items:center;text-align:left}
+.hero-grid .seal{margin:0}
+.hero-grid .org{margin-bottom:18px}
+.hero-grid h1{margin:0;max-width:26ch}
+.hero-grid .sub{margin:20px 0 0}
+@media (max-width:760px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero-grid .seal{margin:0 auto 20px;order:-1}.hero-grid h1{margin:0 auto}.hero-grid .sub{margin:20px auto 0}}
+.disclaimer-block{max-width:1020px;margin:0 auto;padding:22px 26px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.disclaimer-block p.quote{font-family:"Noto Serif",serif;font-style:italic;color:var(--slate);font-size:15.5px;line-height:1.55;max-width:78ch;margin-top:8px}
+.hero h1{font-weight:300;font-size:clamp(32px,5.4vw,58px);line-height:1.1;color:#2E3A38;max-width:17ch;margin:0 auto;font-family:"Noto Serif",serif}
+.hero h1 em{font-style:italic;color:var(--clay)}
+.hero .sub{margin:22px auto 0;max-width:54ch;font-size:19px;color:var(--muted);font-family:"Noto Sans",sans-serif}
+.status-chip{display:inline-flex;align-items:center;flex-wrap:wrap;gap:4px 8px;margin-top:28px;font-family:"Noto Sans",ui-monospace,monospace;font-size:12px;letter-spacing:.08em;background:var(--paper);border:1px solid var(--hair);color:var(--slate);padding:9px 16px;border-radius:16px}
+.status-chip .dot{width:7px;height:7px;border-radius:50%;background:var(--ochre)}
+
+.tenses{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:36px}
+.tense{border-top:3px solid var(--clay);padding-top:16px}
+.tense.does{border-color:var(--jade)}
+.tense.seeks{border-color:var(--sky)}
+.tense h3{font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px;color:var(--clay);font-family:"Noto Sans",monospace;font-weight:600}
+.tense.does h3{color:var(--jade-text)}
+.tense.seeks h3{color:#4d6f8f}
+.tense p{font-size:16px;color:var(--muted);font-family:"Noto Sans",sans-serif}
+
+/* four doors */
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:44px}
+.door{background:var(--paper);border:1px solid var(--hair);border-radius:14px;padding:26px 22px;text-decoration:none;display:block;transition:border-color .2s ease,transform .2s ease}
+.door:hover,.door:focus-visible{border-color:var(--clay);transform:translateY(-2px)}
+.door .num{font-family:"Noto Sans",monospace;font-size:11px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.door h4{font-family:"Noto Serif",serif;font-weight:400;font-size:19px;color:#2E3A38;margin:10px 0 8px}
+.door p{font-size:14.5px;color:var(--muted);max-width:none;font-family:"Noto Sans",sans-serif}
+
+.band{background:var(--slate);color:#E9EDE9;padding:56px 0}
+.band p:not(.eyebrow){color:#C9D2CE;font-size:17px;max-width:72ch;font-family:"Noto Serif",Georgia,serif}
+
+.section-block{border-top:1px solid var(--hair)}
+.pagehead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.pagehead .idx{font-family:"Noto Sans",monospace;font-size:13px;color:var(--muted);letter-spacing:.1em}
+
+.callout{background:var(--paper);border:1px solid var(--hair);border-radius:12px;padding:22px 24px;margin:22px 0;font-family:"Noto Sans",sans-serif;font-size:15.5px;color:var(--slate)}
+/* forms */
+.u-form{margin-top:24px;font-family:"Noto Sans",sans-serif}
+.u-form .row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+@media(max-width:640px){.u-form .row{grid-template-columns:1fr}}
+.u-form label{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.u-form label .opt{text-transform:none;letter-spacing:0;font-style:italic;opacity:.75}
+.u-form input,.u-form select,.u-form textarea{width:100%;border:1px solid var(--hair);border-radius:8px;background:var(--paper);color:var(--slate);font-family:"Noto Sans",sans-serif;font-size:16px;padding:11px 13px;box-sizing:border-box}
+.u-form input:focus,.u-form select:focus,.u-form textarea:focus{outline:2px solid var(--jade-text);outline-offset:1px}
+.u-form textarea{min-height:110px;resize:vertical}
+.u-form .field{margin-bottom:16px}
+.u-form .consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted);margin:18px 0}
+.u-form .consent input{width:auto;margin-top:3px}
+.u-form button{background:var(--clay);color:#FFFEFB;border:none;border-radius:8px;padding:13px 26px;font-family:"Noto Sans",sans-serif;font-size:15px;font-weight:600;cursor:pointer}
+.u-form button:hover{opacity:.92}
+.u-form button:disabled{opacity:.5;cursor:not-allowed}
+.u-form .status{margin-top:14px;font-size:14.5px;display:none}
+.u-form .status.ok{color:var(--jade-text);display:block}
+.u-form .status.err{color:#B4472A;display:block}
+/* footer newsletter subscribe */
+footer .footer-subscribe{margin:0 0 26px;padding-bottom:22px;border-bottom:1px solid var(--hair)}
+footer .footer-subscribe label{display:block;font-family:"Noto Sans",sans-serif;font-size:13px;color:var(--muted);margin-bottom:10px}
+footer .footer-subscribe .row{display:flex;gap:10px;max-width:420px;margin:0 auto;flex-wrap:wrap}
+footer .footer-subscribe input{flex:1 1 220px;border:1px solid var(--hair);border-radius:8px;background:var(--paper);color:var(--slate);font-family:"Noto Sans",sans-serif;font-size:16px;padding:10px 12px;box-sizing:border-box}
+footer .footer-subscribe input::placeholder{color:var(--muted)}
+footer .footer-subscribe button{background:var(--clay);color:#FFFEFB;border:none;border-radius:8px;padding:10px 18px;font-family:"Noto Sans",sans-serif;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap}
+footer .footer-subscribe button:hover{opacity:.9}
+footer .footer-subscribe .status{margin-top:10px;font-size:13.5px}
+footer .footer-subscribe .status.ok{color:var(--jade-text);display:block}
+footer .footer-subscribe .status.err{color:#B4472A;display:block}
+/* contact page nav cards */
+.contact-nav{display:flex;gap:12px;overflow-x:auto;margin:26px 0 40px;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
+.contact-nav a{flex:0 0 auto;width:42%;min-width:130px;max-width:190px;padding:16px 16px;border:1px solid var(--hair);border-radius:12px;background:var(--paper);text-decoration:none;scroll-snap-align:start;transition:background .15s,border-color .15s}
+.contact-nav a:hover,.contact-nav a:focus{background:var(--warm);border-color:var(--jade-text)}
+.contact-nav a h3{margin:0 0 6px;font-family:"Noto Serif",serif;font-weight:400;font-size:16.5px;color:var(--clay);line-height:1.25}
+.contact-nav a p{margin:0;font-size:13px;color:var(--muted);font-family:"Noto Sans",sans-serif;line-height:1.4}
+@media(min-width:640px){.contact-nav a{width:31%;max-width:none}}
+.callout b{color:var(--clay)}
+.callout.jade{border-color:var(--jade);background:#F4F8F6}
+.callout.jade b{color:var(--jade-text)}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:24px}
+@media(max-width:720px){.grid2{grid-template-columns:1fr}}
+.domain-list{margin-top:16px;font-family:"Noto Sans",sans-serif;font-size:15px;color:var(--muted);line-height:2;list-style:none;columns:2;column-gap:28px}
+@media(max-width:720px){.domain-list{columns:1}}
+
+ul.plain{list-style:none;margin-top:16px}
+ul.plain li{padding:10px 0;border-top:1px solid var(--hair);font-family:"Noto Sans",sans-serif;font-size:15.5px}
+ul.plain li:first-child{border-top:none}
+ul.plain b{color:var(--clay)}
+
+.principle-list{margin-top:20px}
+.principle-list .p-item{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--hair)}
+.principle-list .p-item:first-child{border-top:none}
+.principle-list .p-item .mark{color:var(--jade);font-family:"Noto Sans",monospace;flex-shrink:0}
+.principle-list .p-item p{font-family:"Noto Sans",sans-serif;font-size:15px;color:var(--muted);max-width:none}
+
+.steps{margin-top:32px;display:grid;gap:0}
+.step{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--hair)}
+@media (max-width:760px){.step{grid-template-columns:40px 1fr;gap:10px}}
+.step:first-child{border-top:none}
+.step .n{font-family:"Noto Serif",serif;font-size:28px;color:var(--clay);font-weight:300}
+.step h4{font-family:"Noto Serif",serif;font-weight:400;font-size:19px;color:#2E3A38;margin-bottom:6px}
+.step .tag{display:inline-block;font-family:"Noto Sans",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;background:#EFEAE0;color:var(--muted);padding:3px 9px;border-radius:999px;margin-left:8px;vertical-align:middle}
+.step .tag.now{background:var(--jade);color:#EAF2EE}
+.step p{font-family:"Noto Sans",sans-serif;font-size:15.5px;color:var(--muted)}
+
+.doorsmall{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:24px}
+.dsm{border-top:2px solid var(--clay);padding-top:14px}
+.dsm h4{font-family:"Noto Serif",serif;font-weight:400;font-size:16px;color:#2E3A38;margin-bottom:6px}
+.dsm p{font-size:14px;color:var(--muted);font-family:"Noto Sans",sans-serif}
+.dsm .vote{color:var(--jade);font-family:"Noto Sans",monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase}
+
+.cta{display:inline-block;margin-top:20px;font-family:"Noto Sans",sans-serif;font-size:14.5px;color:var(--paper);background:var(--clay);padding:12px 22px;border-radius:8px;text-decoration:none}
+.cta:hover,.cta:focus-visible{background:#743c1b}
+.cta.ghost{background:transparent;color:var(--clay);border:1px solid var(--clay)}
+.cta.ghost:hover{background:var(--clay);color:var(--paper)}
+
+table.contact{width:100%;margin-top:20px;border-collapse:collapse;font-family:"Noto Sans",sans-serif;font-size:15px}
+table.contact td{padding:12px 0;border-top:1px solid var(--hair);vertical-align:top}
+table.contact td:first-child{color:var(--muted);width:58%;padding-right:20px}
+@media(max-width:600px){
+  table.contact, table.contact tbody, table.contact tr, table.contact td{display:block;width:100%}
+  table.contact tr{border-top:1px solid var(--hair);padding:12px 0}
+  table.contact td{border-top:none;padding:0;width:100%}
+  table.contact td:first-child{padding-bottom:4px;font-weight:600}
+}
+
+footer{padding:70px 0 50px;text-align:center;border-top:1px solid var(--hair)}
+footer .fin{font-size:19px;color:var(--clay);font-style:italic;margin-bottom:12px;font-family:"Noto Serif",serif}
+footer p{margin:0 auto;font-size:13.5px;color:var(--muted);max-width:58ch;font-family:"Noto Sans",sans-serif}
+footer a{color:var(--jade-text)}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+@media(max-width:720px){section{padding:52px 0}}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--clay);color:var(--paper);padding:12px 20px;z-index:100;font-family:"Noto Sans",sans-serif;font-size:14px;border-radius:0 0 8px 0}
+.skip-link:focus{left:0}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<nav aria-label="Site sections">
+  <div class="wrap">
+    <span class="brand">UNIPC</span>
+    <a href="index.html">Home</a>
+    <div class="nav-group">
+      <button type="button" class="trigger">Who are you ▾</button>
+      <div class="nav-dropdown">
+        <div class="nav-dropdown-inner">
+        <a href="nations.html">Nations &amp; Peoples</a>
+      <a href="states.html">States &amp; Ministries</a>
+      <a href="organizations.html">Organizations &amp; Civil Society</a>
+      <a href="allies.html">Allies &amp; Funders</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button type="button" class="trigger">About ▾</button>
+      <div class="nav-dropdown">
+        <div class="nav-dropdown-inner">
+        <a href="about.html">About &amp; Founding</a>
+      <a href="achieved.html">What We Achieved</a>
+      <a href="recognition.html">Path to Recognition</a>
+      <a href="membership.html">Membership</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-group active">
+      <button type="button" class="trigger">Engage ▾</button>
+      <div class="nav-dropdown">
+        <div class="nav-dropdown-inner">
+        <a href="contact.html?dept=volunteer@unipc.info">Volunteering</a>
+      <a href="support.html">In-Kind Support</a>
+      <a href="donate.html">Donate</a>
+        </div>
+      </div>
+    </div>
+    <a href="newsroom.html">Newsroom</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main id="main">
+<!-- ============ HOW TO DONATE ============ -->
+<section class="section-block" id="donate">
+  <div class="wrap">
+    <p class="eyebrow reveal">05a · How to Donate</p>
+    <h2 class="reveal">A gift, if you'd like to give one.</h2>
+    <p class="lede reveal">UNIPC itself holds no funds and accepts no donations directly, consistent with our Preparatory Phase (see <a href="status.html" style="color:var(--jade-text)">Current Status</a>). While all donations are significant and important, every gift begins with a conversation. Please use the button below so that we may direct you to the right place.</p>
+
+    <h3 class="reveal in" style="margin-top:32px;color:#2E3A38;font-size:19px">Gifts under $500</h3>
+    <p class="reveal" style="margin-top:16px">Gifts under $500 are directed to one of our independently registered, mission-aligned non-profit allies. They receive the funds and direct them, at their own discretion, toward UNIPC's preparatory work.</p>
+
+    <div class="callout reveal" style="max-width:66ch">Tax-receipt eligibility depends on your own jurisdiction's rules, not just the receiving organization's status — most countries don't recognize a charitable receipt issued under a different jurisdiction's tax code. Where a receipt isn't available, giving this way is genuinely humanitarian, freely offered without expectation of anything in return — and that, more than any tax benefit, is exactly the spirit we hope draws people to it. Please confirm receipt eligibility for your own situation directly with the specific organization before donating if that is relevant to your decision.</div>
+
+    <p class="reveal" style="margin-top:20px">We have, and warmly welcome, supporting allies of this kind, across at least three jurisdictions already offering this support. To receive current details for any active supporting ally, contact us directly — we don't publish this information openly on the site.</p>
+
+    <h3 class="reveal in" style="margin-top:32px;color:#2E3A38;font-size:19px">Gifts of $500 and above</h3>
+    <p class="reveal" style="margin-top:16px">Gifts of $500 and above should be discussed with our organization so that appropriate bank or digital-asset details can be provided to you accordingly. These gifts support preparation of the Treaty of Tiohtiá:ke as well as travel to present it for ratification to at least five Nation States, from Southern Africa to Europe, across four continents.</p>
+
+    <p class="reveal" style="margin-top:16px">We are currently able to accept cryptocurrency donations in any amount of USDT or USDC (stablecoins pegged to $1 USD) sent via the Ethereum network (ERC-20). Please send only via ERC-20/Ethereum — transfers through other networks may result in permanent loss of funds. We are also able to accept Ethereum (ETH). For any other cryptocurrency, please get in touch beforehand — these will need to be converted before being accepted, and we'll confirm the details with you first.</p>
+
+    <p class="reveal" style="margin-top:16px">All gifts, regardless of form, are subject to the same standard: the management firm conducts KYC/AML due diligence and administration on every donation, until UNIPC's legal personality is established. Fiat gifts are held in the legal counsel escrow account at Citibank. Cryptocurrency gifts are received into a wallet, which the management firm manages and administers within the wallet-access, transfer, conversion, allocation, and reporting authority expressly granted by UNIPC, pursuant to our management agreement. The firm's role is financial and compliance only; it holds no vote and has no role in UNIPC's governance or direction. Disbursements are made directly to the vendor or service provider for each disclosed purpose — funds are never paid to UNIPC or to any co-founder or officer.</p>
+
+    <p class="reveal" style="margin-top:16px">Funds are released only for disclosed preparatory purposes, in strict compliance with the management agreement. We will report on their use quarterly, or upon attaining formal legal persona, whichever comes first.</p>
+
+    <p class="reveal" style="margin-top:16px">If UNIPC fails to attain legal persona, unspent funds shall be returned to the originating account(s), pro rata.</p>
+
+    <p class="reveal" style="margin-top:16px">Gifts made through the escrow arrangement are not tax-deductible.</p>
+
+    <p class="reveal" style="margin-top:16px">For questions on any gift, our Senior Officer for Funding and Philanthropic Relations is available before you give.</p>
+
+    <p class="reveal" style="margin-top:16px">Prefer a conversation first? Our philanthropy team is available for a one-on-one discussion to find the right fit for your giving.</p>
+
+    <a class="cta reveal" href="contact.html?dept=otc@unipc.info&amp;msg=Hello%2C%20I%27d%20like%20more%20information%20about%20making%20a%20gift%20to%20support%20UNIPC%27s%20preparatory%20work%2C%20including%20the%20escrow%20and%20cryptocurrency%20donation%20options.%20Please%20share%20the%20relevant%20details.">Request Donation Details →</a>
+
+    <h3 class="reveal in" style="margin-top:32px;color:#2E3A38;font-size:19px">UNIPC always welcomes donors at every level — but we hold to some basics for all of them.</h3>
+    <h4 class="reveal in" style="margin-top:20px;color:var(--clay);font-size:16px;font-weight:600">What Your Funding Will — and Won't — Achieve</h4>
+    <table style="width:100%;margin-top:14px;border-collapse:collapse;font-family:'Noto Sans',sans-serif;font-size:14.5px">
+          <tbody><tr>
+            <th style="text-align:left;padding:10px 12px 10px 0;border-bottom:2px solid var(--hair);color:var(--jade-text)">Your funding will...</th>
+            <th style="text-align:left;padding:10px 0 10px 12px;border-bottom:2px solid var(--hair);color:var(--clay)">Your funding will not...</th>
+          </tr>
+          <tr>
+            <td style="padding:10px 12px 10px 0;border-bottom:1px solid var(--hair);color:var(--muted)">Advance real treaty-preparation and recognition work</td>
+            <td style="padding:10px 0 10px 12px;border-bottom:1px solid var(--hair);color:var(--muted)">Buy a vote — nations alone govern</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 12px 10px 0;border-bottom:1px solid var(--hair);color:var(--muted)">Be tracked and disclosed above the transparency threshold</td>
+            <td style="padding:10px 0 10px 12px;border-bottom:1px solid var(--hair);color:var(--muted)">Buy influence over UNIPC's direction</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 12px 10px 0;border-bottom:1px solid var(--hair);color:var(--muted)">Be spent exactly as disclosed, with no hidden use</td>
+            <td style="padding:10px 0 10px 12px;border-bottom:1px solid var(--hair);color:var(--muted)">Buy early access to information not otherwise public</td>
+          </tr>
+        </tbody></table>
+    <p class="reveal in" style="margin-top:14px;font-size:14.5px;color:var(--muted);font-style:italic">We spell out the "won't" column because the donors we want most are the ones who read it and feel relieved, not deterred.</p>
+    <p class="reveal in" style="margin-top:24px;font-style:italic;color:var(--clay);font-family:'Noto Serif',serif">"If you want influence, we're the wrong room. If you want to be early, you're right on time."</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fin">Precision made powerful.</p>
+    <form class="footer-subscribe" id="subscribe-form" data-endpoint="/api/subscribe" data-success="Subscribed. Thank you.">
+      <label for="sub-email">Stay informed — no spam, no trackers, unsubscribe anytime.</label>
+      <div class="row">
+        <input id="sub-email" name="email" type="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </div>
+      <p class="status" role="status"></p>
+    </form>
+    <p style="margin-bottom:10px;font-size:13px">
+      <a href="status.html" style="color:var(--jade-text);margin-right:14px">Status</a><a href="emblem.html" style="color:var(--jade-text);margin-right:14px">Emblem</a><a href="media.html" style="color:var(--jade-text)">Media &amp; Brand Use</a>
+    </p>
+    <p style="margin-bottom:14px">
+      <a href="https://www.instagram.com/unipc.info" style="color:var(--jade-text);margin-right:14px">Instagram</a><a href="https://substack.com/@unipc" style="color:var(--jade-text);margin-right:14px">Substack</a><a href="https://youtube.com/@unipc_info" style="color:var(--jade-text);margin-right:14px">YouTube</a><a href="https://www.tiktok.com/@unipc.info" style="color:var(--jade-text);margin-right:14px">TikTok</a><a href="https://x.com/UNIPC_INFO" style="color:var(--jade-text)">X</a>
+    </p>
+    <p>© United&nbsp;Nations&nbsp;Indigenous Peoples Council (UNIPC) · founded by more than sixty individual co-founders, drawn from Indigenous Nations and Peoples · unipc.info · Working draft for review · every claim on this site is checked against our <a href="status.html">current status</a> before publication.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.1});
+  document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+})();
+(function(){
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll("nav a[href^='#']"));
+  var sections = navLinks.map(function(a){ return document.querySelector(a.getAttribute("href")); }).filter(Boolean);
+  function setActive(id){
+    navLinks.forEach(function(a){
+      a.classList.toggle("active", a.getAttribute("href") === "#" + id);
+    });
+  }
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ setActive(entry.target.id); }
+    });
+  }, { rootMargin: "-72px 0px -70% 0px", threshold: 0 });
+  sections.forEach(function(s){ spy.observe(s); });
+})();
+(function(){
+  function handleForm(form){
+    if(!form) return;
+    var statusEl = form.querySelector(".status");
+    var btn = form.querySelector("button[type=submit]");
+    form.addEventListener("submit", function(ev){
+      ev.preventDefault();
+      statusEl.className = "status";
+      statusEl.textContent = "";
+      btn.disabled = true;
+      var originalText = btn.textContent;
+      btn.textContent = "Sending…";
+      var data = Object.fromEntries(new FormData(form).entries());
+      fetch(form.getAttribute("data-endpoint"), {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(data)
+      }).then(function(res){
+        if(!res.ok) throw new Error("send failed");
+        return res.json().catch(function(){ return {}; });
+      }).then(function(){
+        statusEl.textContent = form.getAttribute("data-success") || "Thank you — we've received this.";
+        statusEl.className = "status ok";
+        form.reset();
+      }).catch(function(){
+        statusEl.textContent = "Something went wrong sending this. Please try again, or email us directly using the address below.";
+        statusEl.className = "status err";
+      }).finally(function(){
+        btn.disabled = false;
+        btn.textContent = originalText;
+      });
+    });
+  }
+  handleForm(document.getElementById("contact-form"));
+  handleForm(document.getElementById("media-form-el"));
+  handleForm(document.getElementById("feedback-form-el"));
+  handleForm(document.getElementById("subscribe-form"));
+
+  // Nav dropdown groups — tap/click to open (works on touch and mouse alike).
+  // Hover-to-open on top of this is handled purely in CSS for pointer devices.
+  var openGroup = null;
+  document.querySelectorAll("nav .nav-group .trigger").forEach(function(trigger){
+    trigger.addEventListener("click", function(ev){
+      ev.stopPropagation();
+      var group = trigger.closest(".nav-group");
+      var wasOpen = group.classList.contains("open");
+      document.querySelectorAll("nav .nav-group.open").forEach(function(g){ g.classList.remove("open"); });
+      if (!wasOpen) { group.classList.add("open"); openGroup = group; }
+      else { openGroup = null; }
+    });
+  });
+  document.addEventListener("click", function(){
+    document.querySelectorAll("nav .nav-group.open").forEach(function(g){ g.classList.remove("open"); });
+  });
+
+  // Pre-fill department (and optionally a starter message) from a link like
+  // contact.html?dept=otc@unipc.info&msg=Hello...
+  var cf = document.getElementById("contact-form");
+  if (cf) {
+    var SUBJECTS_BY_DEPT = {
+      "eosg@unipc.info": ["General inquiry", "Diplomatic correspondence", "Meeting request", "Other"],
+      "secretariat@unipc.info": ["General inquiry", "Document request", "Other"],
+      "jcac@unipc.info": ["Legal opinion request", "Constitutional interpretation", "Treaty Registrar matter", "Correcting a misrepresentation of UNIPC", "Other"],
+      "treaties@unipc.info": ["Treaty text request", "Treaty signing logistics", "Treaty status inquiry", "Other"],
+      "irp@unipc.info": ["Charter", "Treaty", "Letter of acceptance to travel for treaty signing", "Other document request", "General inquiry"],
+      "otc@unipc.info": ["In-kind sponsorship inquiry", "Partnership proposal", "Financial/governance briefing request", "Donation information", "Other"],
+      "oac@unipc.info": ["Administrative inquiry", "Vendor/procurement inquiry", "Other"],
+      "osc@unipc.info": ["Security concern", "Credential/identity inquiry", "Other"],
+      "membership@unipc.info": ["Membership application", "Membership status inquiry", "Voting rights question", "General inquiry"],
+      "social@unipc.info": ["Press/media inquiry", "Interview request", "Social media inquiry", "Other"]
+    };
+
+    function populateSubjects(deptValue, preselect){
+      var subjSelect = document.getElementById("cf-subject");
+      if (!subjSelect) return;
+      var options = SUBJECTS_BY_DEPT[deptValue];
+      subjSelect.innerHTML = "";
+      if (!options) {
+        subjSelect.disabled = true;
+        var placeholder = document.createElement("option");
+        placeholder.value = ""; placeholder.selected = true;
+        placeholder.textContent = "Choose a department first…";
+        subjSelect.appendChild(placeholder);
+        return;
+      }
+      subjSelect.disabled = false;
+      var blank = document.createElement("option");
+      blank.value = ""; blank.disabled = true; blank.selected = !preselect;
+      blank.textContent = "Choose one…";
+      subjSelect.appendChild(blank);
+      options.forEach(function(opt){
+        var o = document.createElement("option");
+        o.value = opt; o.textContent = opt;
+        if (preselect && opt === preselect) o.selected = true;
+        subjSelect.appendChild(o);
+      });
+    }
+
+    var deptSelect = document.getElementById("cf-dept");
+    if (deptSelect) {
+      deptSelect.addEventListener("change", function(){ populateSubjects(deptSelect.value); });
+    }
+
+    var params = new URLSearchParams(window.location.search);
+    var dept = params.get("dept");
+    var msg = params.get("msg");
+    if (dept) {
+      var select = document.getElementById("cf-dept");
+      if (select) {
+        for (var i = 0; i < select.options.length; i++) {
+          if (select.options[i].value === dept) { select.value = dept; break; }
+        }
+      }
+      populateSubjects(dept);
+    }
+    if (msg) {
+      var msgField = document.getElementById("cf-message");
+      if (msgField) msgField.value = msg;
+    }
+  }
+})();
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a412b479c9985933',t:'MTc5MDQzMDI4Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"bf6ebe06d8d84ce89d3b5312145c4632","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
