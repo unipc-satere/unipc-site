@@ -53,11 +53,15 @@ assets/unipc.js     Progressive enhancement (scroll fade, mailto forms) — no p
   `#43514F`.
 - **No trackers, ever.** No analytics that fingerprint; contact lists are never
   shared or sold. Privacy is a safety feature.
+  Traffic is measured only by Cloudflare's server-side analytics (dashboard);
+  no analytics script is ever placed on a page. If a Cloudflare beacon or
+  `challenge-platform` script reappears in the HTML, disable it in the dashboard.
 - **The independence disclaimer** appears verbatim in every footer, the homepage
   band, and the Status page.
-- Forms and `mailto:` links route to the eight real department addresses
-  (`secretariat@`, `membership@`, `irp@`, `otc@`, `ohr@`, `oac@`, `osc@`,
-  `media@` — all `@unipc.info`), wired per page.
+- Forms and `mailto:` links route to the real department addresses (all `@unipc.info`):
+  `secretariat@`, `eosg@`, `membership@`, `irp@`, `jcac@`, `treaties@`, `otc@`,
+  `oac@`, `osc@`, `social@`, `volunteer@`. `ohr@` is deliberately dropped for now (no staff until a legal
+  persona exists) and `media@` is not used (`social@` covers press). Wired per page.
 
 ## Deploy
 No build step. Publish/output directory: the **repository root**. Security and
@@ -71,8 +75,8 @@ Add the custom domain under the Pages project's *Custom domains*; Cloudflare
 issues HTTPS automatically. `_headers` and any `_redirects` file are applied
 automatically.
 
-Pages currently carry `noindex,nofollow` and `robots.txt` disallows crawling
-while content is draft — lift both at launch.
+The site is live and open to search engines: `robots.txt` allows all crawling and
+points to `sitemap.xml`. Only `404.html` carries `noindex`, which is intended.
 
 ## Local preview
 ```

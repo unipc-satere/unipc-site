@@ -235,7 +235,7 @@ footer a{color:var(--jade-text)}
       <button type="button" class="trigger">Engage ▾</button>
       <div class="nav-dropdown">
         <div class="nav-dropdown-inner">
-        <a href="contact.html?dept=volunteer@unipc.info">Volunteering</a>
+        <a href="contact.html?dept=volunteer@unipc.info&amp;subject=Volunteer%20inquiry">Volunteering</a>
       <a href="support.html">In-Kind Support</a>
       <a href="donate.html">Donate</a>
         </div>
@@ -275,7 +275,7 @@ footer a{color:var(--jade-text)}
             <option value="oac@unipc.info">Office of the Administration Council</option>
             <option value="osc@unipc.info">Office of the Security Council</option>
             <option value="membership@unipc.info">Membership</option>
-            <option value="social@unipc.info">Press &amp; Social</option>
+            <option value="social@unipc.info">Press &amp; Social</option>            <option value="volunteer@unipc.info">Volunteer &amp; Internship Inquiries</option>
           </select>
         </div>
         <div class="field">
@@ -405,6 +405,7 @@ footer a{color:var(--jade-text)}
     <p style="margin-bottom:14px">
       <a href="https://www.instagram.com/unipc.info" style="color:var(--jade-text);margin-right:14px">Instagram</a><a href="https://substack.com/@unipc" style="color:var(--jade-text);margin-right:14px">Substack</a><a href="https://youtube.com/@unipc_info" style="color:var(--jade-text);margin-right:14px">YouTube</a><a href="https://www.tiktok.com/@unipc.info" style="color:var(--jade-text);margin-right:14px">TikTok</a><a href="https://x.com/UNIPC_INFO" style="color:var(--jade-text)">X</a>
     </p>
+    <p class="footer-disclaimer">UNIPC is entirely independent and not controlled or directed by any state, government, the United&nbsp;Nations&nbsp;Organization (whose membership consists solely of Member States), other international organizations, or any other entity — not now and never shall be.</p>
     <p>© United&nbsp;Nations&nbsp;Indigenous Peoples Council (UNIPC) · founded by more than sixty individual co-founders, drawn from Indigenous Nations and Peoples · unipc.info · Working draft for review · every claim on this site is checked against our <a href="status.html">current status</a> before publication.</p>
   </div>
 </footer>
@@ -498,7 +499,8 @@ footer a{color:var(--jade-text)}
       "oac@unipc.info": ["Administrative inquiry", "Vendor/procurement inquiry", "Other"],
       "osc@unipc.info": ["Security concern", "Credential/identity inquiry", "Other"],
       "membership@unipc.info": ["Membership application", "Membership status inquiry", "Voting rights question", "General inquiry"],
-      "social@unipc.info": ["Press/media inquiry", "Interview request", "Social media inquiry", "Other"]
+      "social@unipc.info": ["Press/media inquiry", "Interview request", "Social media inquiry", "Other"],
+      "volunteer@unipc.info": ["Volunteer inquiry", "Internship inquiry", "Other"]
     };
 
     function populateSubjects(deptValue, preselect){
@@ -542,7 +544,7 @@ footer a{color:var(--jade-text)}
           if (select.options[i].value === dept) { select.value = dept; break; }
         }
       }
-      populateSubjects(dept);
+      populateSubjects(dept, params.get("subject"));
     }
     if (msg) {
       var msgField = document.getElementById("cf-message");

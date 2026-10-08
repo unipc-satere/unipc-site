@@ -20,6 +20,7 @@ const ALLOWED_DEPARTMENTS = new Set([
   "osc@unipc.info",
   "membership@unipc.info",
   "social@unipc.info",
+  "volunteer@unipc.info",
 ]);
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

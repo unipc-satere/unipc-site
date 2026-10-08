@@ -319,3 +319,8 @@ main{flex:1}
   .u-wrap{padding-left:20px;padding-right:20px}
   .u-wrap--doc,.u-wrap--read{margin-left:max(20px,calc(50% - 552px));padding-left:0;padding-right:20px}
 }
+
+/* Independence disclaimer — footer line (every page) and band (home, status) */
+.footer-disclaimer{font-size:13px;line-height:1.55;margin-bottom:10px}
+.disclaimer-block{max-width:1020px;margin:0 auto;padding:22px 26px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.disclaimer-block p.quote{font-family:"Noto Serif",serif;font-style:italic;color:var(--slate);font-size:15.5px;line-height:1.55;max-width:78ch;margin-top:8px}
